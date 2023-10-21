@@ -1,0 +1,784 @@
+.pizzacontainer {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    grid-template-rows: 1fr 0.43fr 1fr;
+
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.pizzacontainer .p1, .p2, .p3 {
+    width: 100%;
+    background: #121212;
+
+    border-radius: 0.4rem;
+    display: flex;
+
+    padding: 1rem;
+}
+
+.pizzacontainer .p1 .childp1 {
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+}
+
+.pizzacontainer .p1 .childp1 img {
+    object-fit: contain;
+    filter: drop-shadow(0 1px 1px rgba(231, 225, 225, 0.05));
+    max-height: 145px;
+}
+
+.pizzacontainer .p1 .childp1 h1 {
+
+    font-weight: 800;
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+
+.pizzacontainer .p1 .childp1 h4 {
+
+    font-weight: 600;
+    color: #00e673;
+    opacity: 0.8;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+.pizzacontainer .p1 .childp1 .childp2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+
+.pizzacontainer .p1 .childp1 p {
+
+    font-weight: 300;
+    color: white;
+    opacity: 0.5;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+.pizzacontainer .p1 .childp1 .childp2 .priceandbtn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.pizzacontainer .p1 .childp1 .childp2 .priceandbtn button {
+    background: #00e673;
+    padding: 0.3rem 0.8rem;
+    color: black;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+
+
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+
+.pizzacontainer .p2 .childp1 {
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+}
+
+.pizzacontainer .p2 .childp1 img {
+    object-fit: contain;
+    filter: drop-shadow(0 1px 1px rgba(231, 225, 225, 0.05));
+    max-height: 145px;
+}
+
+.pizzacontainer .p2 .childp1 h1 {
+
+    font-weight: 800;
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+
+.pizzacontainer .p2 .childp1 h4 {
+
+    font-weight: 600;
+    color: #00e673;
+    opacity: 0.8;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+.pizzacontainer .p2 .childp1 .childp2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+
+.pizzacontainer .p2 .childp1 p {
+
+    font-weight: 300;
+    color: white;
+    opacity: 0.5;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+.pizzacontainer .p2 .childp1 .childp2 .priceandbtn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.pizzacontainer .p2 .childp1 .childp2 .priceandbtn button {
+    background: #00e673;
+    padding: 0.3rem 0.8rem;
+    color: black;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+
+
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+
+.pizzacontainer .p3 .childp1 {
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+}
+
+.pizzacontainer .p3 .childp1 img {
+    object-fit: contain;
+    filter: drop-shadow(0 1px 1px rgba(231, 225, 225, 0.05));
+    max-height: 145px;
+}
+
+.pizzacontainer .p3 .childp1 h1 {
+
+    font-weight: 800;
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+
+.pizzacontainer .p3 .childp1 h4 {
+
+    font-weight: 600;
+    color: #00e673;
+    opacity: 0.8;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+.pizzacontainer .p3 .childp1 .childp2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+
+.pizzacontainer .p3 .childp1 p {
+
+    font-weight: 300;
+    color: white;
+    opacity: 0.5;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+.pizzacontainer .p3 .childp1 .childp2 .priceandbtn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.pizzacontainer .p3 .childp1 .childp2 .priceandbtn button {
+    background: #00e673;
+    padding: 0.3rem 0.8rem;
+    color: black;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+
+
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+
+.modal {
+
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    display:  none;
+    left: 0;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(18, 18, 18, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    place-items: center;
+    transition: ease-in 1s;
+}
+.exitmodal{
+
+    position: absolute;
+    background: #121212;
+    right: 1rem;
+    top: 1rem;
+
+    color: white;
+    opacity: 0.8;
+font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 50%;
+  border: 3px double  #ed4245;
+font-weight: bold;
+}
+.modal .modalcon {
+    width: auto;
+    transition: ease-in 1s;
+    background: #121212;
+    height:auto;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    position: relative;
+}
+
+.modal .modalcon .modalcon1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100%;
+    gap: 0.5rem;
+}
+
+.modal .modalcon .modalcon1 h1 {
+    font-weight: 600;
+    color: white;
+    opacity: 0.8;
+    font-size: 30px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+
+.modal .modalcon .modalcon1 h4 {
+    font-weight: 600;
+    color: #00e673;
+    opacity: 0.8;
+    font-size: 30px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.modal .modalcon .modalcon1 h4 span {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.modal .modalcon .modalcon1 p {
+    font-weight: 300;
+    color: white;
+    opacity: 0.5;
+    font-size: 18px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+
+}
+
+
+.modal .modalcon .modalcon1 img {
+width: 100%;
+}
+
+.modal .modalcon .modalcon2 {
+    background: #242424;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.modal .modalcon .modalcon2:hover {
+    background: #2a2a2a;
+
+}
+
+.modal .modalcon .modalcon2 h1 {
+    font-weight: 500;
+    color: #ffff;
+    opacity: 0.9;
+    font-size: 23px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.modal .modalcon .modalcon2 .size {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.modal .modalcon .modalcon2 .size .sizecon {
+
+position: relative;
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.modal .modalcon .modalcon2 .size .sizecon h1 {
+    font-weight: 500;
+    color: #ffff;
+    opacity: 0.9;
+    font-size: 20px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+
+
+}
+
+.modal .modalcon .modalcon2 .size .sizecon p {
+    font-weight: 300;
+    color: #ffff;
+    opacity: 0.6;
+    font-size: 12px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+
+
+}
+
+.modal .modalcon .modalcon2 .size .sizecon .sizecon1 {
+    border-radius: 0.5rem;
+    height: 80px;
+    background: #1a1a1a;
+    padding: 1rem;
+    display: flex;
+    place-items: center;
+position: relative;
+}
+.modal .modalcon .modalcon2 .size .sizecon input[type="radio"]{
+display: none;
+
+}
+.modal .modalcon .modalcon2 .addons input[type="checkbox"]{
+
+display: none;
+}
+
+
+
+.modal .modalcon .modalcon2 .size .sizecon div:before{
+    position: absolute;
+    top:-0.4rem;
+right:0.3rem;
+
+    width: 10px;
+    height: 10px;
+    content: "✅";
+    border-radius: 50%;
+    display: none;
+}
+.modal .modalcon .modalcon2 .size .sizecon #solo:checked + div{
+
+    background: #121212;
+
+}
+.modal .modalcon .modalcon2 .size .sizecon #solo:checked + div:before{
+
+display: flex;
+
+}
+.modal .modalcon .modalcon2 .size .sizecon #good4:checked + div{
+
+    background: #121212;
+
+
+}
+.modal .modalcon .modalcon2 .size .sizecon #good4:checked + div:before{
+
+    display: flex;
+
+}
+
+
+.modal .modalcon .modalcon2 .size .sizecon .sizecon1:hover, .modal .modalcon .modalcon2 .size .sizecon .sizecon2:hover {
+    background: #121212;
+
+}
+.modal .modalcon .modalcon2 .size .sizecon input[type="radio"]:checked + .tooltip{
+    display: flex;
+
+}
+.modal .modalcon .modalcon2 .size .sizecon .sizecon2 {
+    border-radius: 0.5rem;
+    height: 80px;
+    background: #1a1a1a;
+    padding: 1rem;
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+
+.modal .modalcon .modalcon2 .size .sizecon div img {
+    height: 35px;
+    object-fit: contain;
+    filter: invert(100);
+}
+
+.modal .modalcon .modalcon2 .addons {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.6rem;
+}
+
+.modal .modalcon .modalcon2 .addons div {
+    background: #1a1a1a;
+    height: 80px;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    display: flex;
+    place-items: center;
+position: relative;
+    gap: 0.5rem;
+}
+.modal .modalcon .modalcon2 .addons div div{
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+
+}
+.modal .modalcon .modalcon2 .addons div div:before {
+    content: "✅";
+    position: absolute;
+display: none;
+    top:-0.4rem;
+    right:0rem;
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+
+}
+
+
+.modal .modalcon .modalcon2 .addons div div span{
+    font-weight: 300;
+    color: #ffff;
+    opacity: 0.6;
+    font-size: 15px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+}
+.modal .modalcon .modalcon2 .addons div  p{
+    font-weight: 300;
+    color: #ffff;
+    opacity: 0.6;
+    font-size: 15px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+
+}
+.modal .modalcon .modalcon2 .addons div:hover span{
+    opacity: 1;
+
+}
+.modal .modalcon .modalcon2 .addons div:hover p{
+    opacity: 1;
+
+}
+.modal .modalcon .modalcon2 .addons div img {
+filter:grayscale(70);
+
+    height: 100%;
+}
+.modal .modalcon .modalcon2 .addons div:hover{
+
+    background: #121212;
+}
+.modal .modalcon .modalcon2 .addons div:hover div{
+
+    background: #121212;
+}
+.modal .modalcon .modalcon2 .addons div:hover img {
+    filter: grayscale(0);
+
+}
+.modal .modalcon .modalcon2 .addons div div:before {
+    content: "✅";
+    position: absolute;
+    display: none;
+    top:-0.4rem;
+    right:0rem;
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+
+}
+.addons label #box1:checked + div div p  ,#box2:checked + div div p,#box3:checked + div div p,#box4:checked + div div p,#box5:checked + div div p,#box6:checked + div div p{
+    opacity: 1;
+
+}
+.addons label #box1:checked + div div  span,#box2:checked + div div span ,#box3:checked + div div span ,#box4:checked + div div span ,#box5:checked + div div span ,#box6:checked + div div span {
+    opacity: 1;
+
+}
+.addons label #box1:checked + div ,#box2:checked + div ,#box3:checked + div ,#box4:checked + div ,#box5:checked + div ,#box6:checked + div {
+    background: #121212;
+
+}
+.addons label #box1:checked + div div ,#box2:checked + div div ,#box3:checked + div div,#box4:checked + div div,#box5:checked + div div,#box6:checked + div div{
+    background: #121212;
+
+}
+.addons label #box1:checked + div img,#box2:checked + div img,#box3:checked + div img,#box4:checked + div img,#box5:checked + div img,#box6:checked + div img {
+    filter:grayscale(0);
+}
+.addons label #box1:checked + div div:before {
+    display: flex;
+
+
+}
+.addons label #box2:checked + div div:before {
+    display: flex;
+
+
+}
+.addons label #box3:checked + div div:before {
+    display: flex;
+
+
+}.addons label #box4:checked + div div:before {
+     display: flex;
+
+
+ }.addons label #box5:checked + div div:before {
+      display: flex;
+
+
+  }.addons label #box6:checked + div div:before {
+       display: flex;
+
+
+   }
+.total {
+    left: 0;
+    width: 100%;
+    background: #1a1a1a;
+    position: absolute;
+    height: 5rem;
+    bottom: 0;
+    display: flex;
+    padding: 1rem 4rem;
+    place-items: center;
+    justify-content: space-between;
+}
+.total .total1{
+    display: flex;
+
+}
+.total .total1 button{
+    background: #121212;
+padding:0.3rem 1rem ;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+
+}
+.total .total1 button:hover{
+    color: #00e673;
+}
+.total .total1 p{
+    padding:0.6rem 1rem ;
+    font-weight: bold;
+    background: #2a2a2a;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+color: white;
+}
+
+
+
+
+.total .total2 p{
+    font-weight: 300;
+    color: #ffff;
+    opacity: 0.6;
+    font-size: 15px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+text-align:right ;
+}
+
+
+.total .total2 h4{
+    color: #00e673;
+    font-weight: 500;
+
+    opacity: 0.9;
+    font-size: 30px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: capitalize;
+
+}
+@media only screen and (max-width: 650px) {
+    .pizzacontainer {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media only screen and (max-width: 470px) {
+    .pizzacontainer .p1 .childp1 {
+        flex-direction: column;
+    }
+
+    .pizzacontainer .p2 .childp1 {
+        flex-direction: column;
+    }
+
+    .pizzacontainer .p3 .childp1 {
+        flex-direction: column;
+    }
+
+
+}
+@media only screen and (max-width: 1000px) {
+    .modal .modalcon .modalcon2 .addons {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 0.6rem;
+
+    }
+    .modal .modalcon {
+        width: 100%;
+        transition: ease-in 1s;
+        background: #121212;
+        height:100%;
+        border-radius: 16px;
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .modal .modalcon .modalcon2 .addons {
+        grid-template-columns:  1fr ;
+
+    }
+    .total {
+        left: 0;
+        width: 100%;
+
+        background: #1a1a1a;
+        position: absolute;
+        height: 5rem;
+        bottom: 0;
+        display: flex;
+        padding: 1rem 4rem;
+        place-items: center;
+        justify-content: space-between;
+    }
+    .modal .modalcon {
+        width: 100%;
+        transition: ease-in 1s;
+        background: #121212;
+        height:100%;
+        border-radius: 16px;
+        display: grid;
+        grid-template-columns:  1fr;
+        position: relative;
+    }
+
+    .modal .modalcon .modalcon1 img {
+        width: auto;
+        height: 200px;
+    }
+    .modal {
+        position: absolute;
+ height: auto;
+        padding: 0.5rem;
+    }
+    .modal .modalcon .modalcon1 {
+        justify-content: center;
+        place-items: center;
+    }
+    .modal .modalcon .modalcon2 {
+        background: #242424;
+        border-radius: 16px;
+        position: unset;
+         overflow: visible;
+        padding: 2rem 2rem 6rem;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .modal .modalcon .modalcon2 .size .sizecon {
+        flex-direction: column;
+    }
+    .exitmodal {
+
+        position: absolute;
+        background: #121212;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+}

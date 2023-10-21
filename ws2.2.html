@@ -1,0 +1,451 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+New">
+    <link rel="stylesheet" href="ws-2.2.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+<nav class="responsivenavbar">
+    <div class="conclose">
+        <button class="close" id="close"><img ALT="" src="arrow-circle-left-svgrepo-com%20(1).png"></button>
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">WS-1.3</a></li>
+        <li><a>WS-1.4</a></li>
+        <li><a>WS-1.5</a></li>
+        <li><a>WS-1.6</a></li>
+        <li><a>WS-1.7</a></li>
+    </ul>
+
+
+</nav>
+<section>
+
+
+    <header>
+
+        <div class="logo">
+            <div class="logo-img">
+                <img src="360_F_392609026_qcToifnbSxjyQHw53XAMsVulzMVPIbCz-removebg-preview%20(2).png">
+
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <filter id="colorize">
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.125 0 0 0 0 0.902 0 0 0 0 0.451 0 0 0 1 0"/>
+                    </filter>
+                </svg>
+                <p>ProElect1</p>
+            </div>
+            <div><p>1ST SEM SY 2023-2024</p></div>
+        </div>
+        <div class="subjectname"><h1>ADVANCE WEB DEVELOPMENT FRONT END</h1>
+            <p>BSIT-3</p>
+        </div>
+        <div class="information">
+            <div><p>fabro, jiovani A.</p></div>
+            <div><img src="IMG_20220824_224936.jpg"></div>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="con">
+            <button class="hicon" id="toggleicon">
+                <img src="hamburger-svgrepo-com.png">
+
+            </button>
+            <div>
+                <nav class="btns" id="navbarbtns">
+
+
+                    <ul id="navbarshow" class="ul">
+
+                        <li><a href="index.html">WS-1.3</a></li>
+                        <li><a>WS-1.4</a></li>
+                        <li><a>WS-1.5</a></li>
+                        <li><a>WS-1.6</a></li>
+                        <li><a>WS-1.7</a></li>
+                    </ul>
+
+
+                </nav>
+            </div>
+
+
+        </div>
+        <div class="con2">
+            <div class="pizzacontainer">
+
+                <div class="p1">
+                    <div class="childp1">
+                        <img src="imagesforpasta/bacon-n-cheese_xvsxray.png" alt="" id="productimg1">
+
+                        <div class="childp2">
+                            <h1 id="productTitle">Bacon And Cheese Fusilli</h1>
+                            <p id="productdescription1">Italian sausage baked in fusilli pasta with marinara sauce
+                                topped with cheddar cheese and parsley. Served with garlic bread</p>
+                            <div class="priceandbtn"><h4>₱299</h4>
+                                <input type="hidden" value="299" id="price1">
+                                <button id="btnorder1"
+                                        onclick="handlesubmit(productTitle.textContent,productimg1.src,productdescription1.textContent,price1.value)">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="p2">
+
+
+                    <div class="childp1">
+                        <img src="imagesforpasta/aglio-olio_cFPW6As.png" alt="" id="productimg2">
+
+                        <div class="childp2">
+                            <h1 id="productTitle2">Shrimp Aglio Olio</h1>
+                            <p id="productdescription2">Olive oil coated pasta lightly sautéed with fresh garlic
+                                succulent shrimps and red chili flakes. Served with garlic bread.</p>
+                            <div class="priceandbtn"><h4>₱<span id="price2">199</span></h4>
+                                <button onclick="handlesubmit(productTitle2.textContent,productimg2.src,productdescription2.textContent,price2.textContent)">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="p3">
+
+
+                    <div class="childp1">
+                        <img src="imagesforpasta/Carbonara_Supreme.png" alt="" id="productimg3">
+
+                        <div class="childp2">
+                            <h1 id="productTitle3">Carbonara Supreme</h1>
+                            <p id="productdescription3">Creamy white sauce pasta with bacon, ham, and button mushrooms
+                                with premium parmesan cheese. Served with garlic bread.</p>
+                            <div class="priceandbtn"><h4>₱<span id="price3">399</span></h4>
+
+                                <button onclick="handlesubmit(productTitle3.textContent,productimg3.src,productdescription3.textContent,price3.textContent)">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal" id="modal">
+
+                <div class="modalcon">
+
+                    <div class="modalcon1">
+
+                        <img src="" id="productimagemodal">
+
+                        <h1 id="modaltitle"></h1>
+                        <p id="modalproductd">Italian sausage baked in fusilli pasta with marinara sauce topped with
+                            cheddar cheese and parsley. Served with
+                            garlic bread</p>
+                        <h4><span>Starts at</span>₱
+                            <div id="currentprice">299.00</div>
+                        </h4>
+                    </div>
+
+
+                    <div class="modalcon2">
+                        <button id="exitmodal" class="exitmodal">x</button>
+                        <div class="size">
+                            <h1>Size</h1>
+                            <div class="sizecon">
+
+                                <label for="solo" onclick="SIZE(currentprice.textContent)">
+                                    <input type="radio" name="pasta" id="solo" checked value="299">
+                                    <div class="sizecon1"><img src="imagesforpasta/person.png">
+                                        <div><h1>Solo</h1></div>
+
+
+                                    </div>
+
+
+                                </label>
+
+
+                                <label for="good4" onclick="SIZE(669)">
+                                    <input type="radio" name="pasta" id="good4" value="360">
+                                    <div class="sizecon2"><img src="imagesforpasta/people.png">
+                                        <div><h1>Platter</h1>
+
+                                            <p>Good for 3-4 persons</p></div>
+
+
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                        <h1>Additional Toppings (optional)</h1>
+                        <div class="addons">
+                            <!--        mix-blend-mode: multiply-->
+                            <label for="box1" onclick="addon(65)">
+                                <input type="checkbox" id="box1">
+                                <div ><img alt="" src="imagesforpasta/Extra_Bacon.png">
+                                    <div>
+
+                                        <p>Crispy Bacon</p>
+                                        <span>+₱65.00</span>
+
+                                    </div>
+
+                                </div>
+
+                            </label>
+                            <label for="box2" onclick="addon(58)">
+                                <input type="checkbox" id="box2">
+                                <div ><img alt=""
+                                                              src="imagesforpasta/toppng.com-sliced-tomato-tomato-527x533.png">
+                                    <div><p> Tomatoes</p>
+                                        <span>+₱58.00</span>
+
+
+                                    </div>
+                                </div>
+                            </label>
+                            <label for="box3" onclick="addon(38)">
+                                <input type="checkbox" id="box3">
+                                <div ><img alt="" src="imagesforpasta/Mushroom_ItaXCYH.png">
+                                    <div><p>Party Mushroom</p>
+                                        <span>+₱38.00</span></div>
+
+                                </div>
+
+                            </label>
+                            <label for="box4" onclick="addon(28)">
+                                <input type="checkbox" id="box4">
+                                <div ><img alt="" src="imagesforpasta/58bf1e2ae443f41d77c734ab.png">
+                                    <div>
+                                        <p>Fresh Basil</p>
+                                        <span>+28.00</span></div>
+
+                                </div>
+
+                            </label>
+                            <label for="box5" onclick="addon(48)">
+                                <input type="checkbox" id="box5">
+                                <div ><img alt="" src="imagesforpasta/1577625964.png">
+                                    <div>
+                                        <p>Pecorino Romano</p>
+                                        <span>+₱48.00</span>
+
+                                    </div>
+                                </div>
+
+                            </label>
+                            <label for="box6" onclick="addon(68)">
+                                <input type="checkbox" id="box6">
+                                <div ><img alt=""
+                                                              src="imagesforpasta/freshly-peeled-lemon-zest-black-ceramic-bowl-isolated-white-top-view-peeled-lemon-zest-black-ceramic-bowl-above-247093751%20(1).png">
+                                    <div>
+                                        <p>Lemon Zest</p>
+                                        <span>+₱68.00</span>
+
+                                    </div>
+
+                                </div>
+
+                            </label>
+                        </div>
+
+
+                        <div class="total">
+                            <div class="total1">
+                                <button id="decrement">-</button>
+                                <p id="indicator">1</p>
+                                <button id="increment">+</button>
+                            </div>
+                            <div class="total2">
+
+                                <div>
+                                    <p>total</p>
+                                    <h4>₱<span id="totalproduct"></span></h4>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+        <div>
+
+            <h3><span>Instructor: </span>Jim-mar De los Reyes
+            </h3>
+
+        </div>
+
+
+    </footer>
+</section>
+
+<script>
+    const togglenavbar = document.getElementById("toggleicon")
+    const confornav = document.querySelector(".responsivenavbar")
+    togglenavbar.addEventListener("click", function (event) {
+
+        confornav.style.transition = "transform 0.5s";
+
+
+        if (confornav.style.transform === "translateX(0rem)") {
+            confornav.style.transform = "translateX(-50rem)"
+
+        } else {
+
+
+            confornav.style.transform = "translateX(0rem)"
+        }
+
+        document.addEventListener('click', function (event) {
+
+
+        });
+
+    });
+    document.getElementById("close").addEventListener("click", function (event) {
+
+        confornav.style.transform = "translateX(-50rem)"
+
+
+    })
+
+
+    const productTitle = document.getElementById("productTitle")
+
+    const btnclose = document.getElementById("exitmodal")
+    const modal = document.getElementById("modal")
+    const modaltitle = document.getElementById("modaltitle")
+    const modalproductd = document.getElementById("modalproductd")
+    const productimagemodal = document.getElementById("productimagemodal")
+   const currentprice = document.getElementById("currentprice")
+    const totalproduct = document.getElementById("totalproduct")
+
+
+
+    let PRICE =  parseFloat(currentprice.textContent)
+
+    function handlesubmit(productname, productimage, productdescription, productprice) {
+        modal.style.display = "flex"
+        modal.style.transition = "ease-in 1s"
+        modaltitle.innerText = productname
+        modalproductd.innerText = productdescription
+        productimagemodal.src = productimage
+        totalproduct.innerText = productprice
+        currentprice.innerText = productprice
+    }
+
+
+
+
+    const boxes = document.querySelectorAll(".addons input[type=checkbox]")
+    const radiobtn = document.querySelectorAll(".sizecon input[type=radio]")
+    let totalValue = 0
+    function SIZE(price) {
+
+        PRICE=parseFloat(price)
+        totalproduct.textContent =  PRICE
+
+    }
+    function addon(price) {
+        totalValue = 0;
+        boxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                totalValue += parseFloat(price);
+            }
+        })
+        totalproduct.textContent =  PRICE+ totalValue
+
+
+    }
+
+    btnclose.addEventListener("click", function () {
+
+        modal.style.display = "none"
+        modal.style.transition = "ease-in 1s"
+        totalproduct.textContent=""
+       boxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+        radiobtn.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+
+
+    })
+
+
+
+
+
+    const indicator = document.getElementById("indicator")
+    document.getElementById("increment").addEventListener("click", function () {
+        indicator.textContent=parseInt(indicator.textContent)+1
+        totalproduct.textContent=parseInt(currentprice.textContent)+parseInt(totalproduct.textContent)
+    })
+    document.getElementById("decrement").addEventListener("click", function () {
+
+       if (parseInt(indicator.textContent) !== 1 ) {
+           indicator.textContent=parseInt(indicator.textContent)-1
+           totalproduct.textContent-=parseInt(currentprice.textContent)
+
+        }
+
+
+    })
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
